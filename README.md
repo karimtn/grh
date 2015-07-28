@@ -5,10 +5,15 @@ How to use this project ?
 
 npm install 
 
-using grant for dev environement 
+using grunt for dev environement 
 
 grunt dev
 
-using grant for product environement
+using grunt for product environement
 
 grunt production
+
+
+Used technology :
+
+Angular js , Slim Php for REST API, Less , grunt, bower , composer
