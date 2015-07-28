@@ -1,0 +1,24 @@
+<div class="box" ng-controller="AuthController">
+    <div class="box-top">
+        <img class="logo" src="assets/images/banner-top.png" />
+    </div>
+    <form name="authForm" novalidate>
+        <div class="red" ng-show="authenticationError">
+            Authentication Failed {{authenticationError.message}}. Try again.
+        </div>
+        <div class="form-group">
+            <label for="login">Login :</label>
+            <input name="login" type="text" ng-model="user.login" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Password :</label>
+            <input name="password" type="password" ng-model="user.password" required />
+        </div>
+        <input type="checkbox" name="remember" />
+        <label for="remember">Remember me</label>
+        <input class="submit" type="submit" name="submit" value="Log In &raquo;" ng-click="doLogin(user)"
+                    ng-disabled="authForm.$invalid"/>
+    </form>
+</div>
+<div class="footer">Forgetten your password ? <span>Request a new one.</span>
+</div>

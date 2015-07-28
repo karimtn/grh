@@ -1,0 +1,15 @@
+<div class="banner-top" ng-controller="NavigationCtrl">
+    <div class="banner">
+        <img src="assets/images/banner-home.png" />
+        <div class="user">
+            <div class="welcome">Welcome {{username}}</div>
+            <a href="#/logout" class="logout">Logout</a>
+        </div>
+    </div>
+    <ul class="menu">
+        <li class="first" ng-class="{ active: isActive('/home') }"><a href="#/home">Demo’s home</a></li>
+        <li ng-class="{ active: isActive('/people-directory') }"><a href="#/people-directory">People directory</a></li>
+        <li ng-class="{ active: isActive('/jobs-manager') }"><a href="#/jobs-manager">Jobs manager</a></li>
+        <li ng-class="{ active: isActive('/statistics') }"><a href="#/statistics">Statistics</a></li>
+    </ul>
+</div>

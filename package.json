@@ -1,0 +1,17 @@
+{
+  "name": "Gestion-rh",
+  "version": "0.0.1",
+  "author": {
+        "name": "Mohamed Karim Bchini",
+        "email": "mohkarb@gmail.com"
+    },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-uglify": "latest",
+    "jshint-stylish": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}

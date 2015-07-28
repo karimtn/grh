@@ -1,0 +1,14 @@
+{
+  "name": "Gestion-rh",
+  "version": "0.0.1",
+  "description": "Gestion rh",
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-resource": "1.2.x",
+    "angular-route": "1.2.x",
+    "jquery": "^2"
+  },
+  "resolutions": {
+    "angular": "1.2.x"
+  }
+}

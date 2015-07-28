@@ -1,0 +1,24 @@
+<ng-include src="'views/header.html'"></ng-include>
+<div class="content" ng-controller="directoryController">
+    <div class="box first">
+        <label>Companies</label>
+        <input type="text" name="companies" ng-model="search.companies" placeholder="Search a company ..."/>
+        <select ng-model="selectedCompany" multiple ng-change="showDepartement(selectedCompany)" >   
+          <option ng-repeat="company in companies| filter: search.companies" value="{{company.value}}">{{company.name}}</option>
+        </select>
+    </div>
+    <div class="box second">
+        <label>Departments</label>
+        <input type="text" name="departments" ng-model="search.departments" placeholder="Search a department..."/>
+        <select multiple ng-model="selecteddepartement" ng-change="showEmployee(selecteddepartement)" name="departmentSelect">
+             <option ng-repeat="department in departments| filter: search.departments" value="{{department.name}}">{{department.name}}</option>
+        </select>
+    </div>
+    <div class="box last">
+        <label>Employees</label>
+        <input type="text" name="employees" ng-model="search.employees" placeholder="Search an employee..."/>
+        <select multiple ng-model="selectedemployee" name="employeeSelect" >
+            <option ng-repeat="employee in employees| filter: search.employees" value="{{employee.value}}">{{employee.name}}</option>
+        </select>
+    </div>
+</div>
